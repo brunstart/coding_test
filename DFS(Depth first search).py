@@ -21,8 +21,7 @@ def DFS(graph, root):
             temp = list(graph[n] - set(visit))
             temp.sort(reverse=True)
             stack += temp
-            print(temp)
-            print(graph[n], set(visit))
+            
     return visit
 
 print(DFS(graph_list, root_node))
